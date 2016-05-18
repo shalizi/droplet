@@ -1,0 +1,231 @@
+body {
+    position: absolute;
+    line-height: 1.7;
+}
+#mean{
+  color: green;
+}
+#logoIcon{
+  width: 59px;
+  height: 59px;
+}
+#codepic{
+  width: 100%;
+  max-width:100%;
+max-height:100%;
+}
+
+#web{
+  color: #0471ba;
+}
+#croc{
+  color: #3D3A37;
+}
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.navbar {
+  width: 100%;
+  position: fixed;
+top: 0;
+z-index: 99;
+line-height: 30px;
+    padding: 10px 40px;
+    background-color: white;
+
+}
+/* nav tabs */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  background-color: transparent;
+}
+/* color of navbar */
+.navbar-default .navbar-nav>li>a{
+  color: #bdbdbd;
+
+}
+/* pulling the menu bar to the right*/
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  float: right;
+  font-size: 14px;
+  line-height: 60px;
+
+}
+#myNavbar{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-stretch: extra-expanded;
+  font-size: 14px;
+
+}
+
+.affix ~ .container-fluid {
+   position: relative;
+   top: 50px;
+}
+.navbar-brand{
+  /*
+  font-family: 'Varela Round', sans-serif;
+  font-family: 'Fredoka One', cursive;
+  */
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  font-weight:900;
+  margin-left: 40px;
+
+
+}
+
+#section1 {
+  width: 100%;
+  padding-top:50px;
+  height:500px;
+  background-color: black;
+
+}
+.crocMessage{
+   text-align: center;
+   background-color: transparent;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+  margin-top: 80px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.btn {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: transparent;
+    border: 6px solid white;
+    white-space: nowrap;
+    padding: 15px 35px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 20px;
+}
+#startWebsite{
+  background-color: transparent;
+  margin: 20px;
+  border-width: : 6px solid white;
+}
+#section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+#section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+#section42 {padding-top:50px;color: black; background-color: #3D3A37;}
+
+
+
+/*footer*/
+
+.footer{
+ background: #3D3A37;
+ text-align: center
+}
+
+#bottombottom{
+	background: #2a2730;
+	text-align: center;
+	padding: 15px;
+  border: 1px solid black;
+
+}
+
+.bottomlink{
+	font-size: 18px;
+}
+p{
+	margin-top: 5px;
+}
+a{
+	border: none;
+}
+
+
+.fa-twitter:before {
+    content: "\f099";
+    color:black;
+	font-size: 25px;
+
+}
+.fa-google-plus:before {
+    content: "\f0d5";
+    color:black;
+	font-size: 25px;
+}
+.fa-facebook-f:before, .fa-facebook:before {
+    content: "\f09a";
+
+    color:black;
+	font-size: 25px;
+	padding: 0px 4px 0px 4px
+}
+
+.socialbuttonf{
+	border-radius: 1800Px;
+}
+.socialbuttong{
+	border-radius: 1800Px;
+}
+.socialbuttont{
+	border-radius: 1800Px;
+}
+#bottombottom{
+	color: #eee;
+}
+#webcroc{
+    font-family: 'Asap', sans-serif;
+	color: black;
+}
+.fa-heart:before {
+    color: pink;
+}
+
+
+
+
+/* coupon */
+.coupon{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+
+
+}
+.five{
+  float: left;
+}
+
+.custom{
+  border: 1px solid white;
+  margin: 10px;
+}
+/*section3*/
+.box{
+  border: 1px solid #5bc0de;
+  text-align: center;
+
+  padding: 15px;
+}
+.fa{
+  border: 1px solid purple;
+  border-radius: 1800Px;
+  font-size: 60px;
+  padding: 40px;
+  margin: 20px;
+  color: purple;
+}
+.boxinfo{
+  text-align: left;
+}
