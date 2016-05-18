@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Droplet</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel='stylesheet' type='text/css'/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'/>
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'/>
+  <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'/>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'/>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+ <link href="http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/custom.css">
+
+
+
+
+
+
+
+
+
+
+
+<style>
+/*
+body{
+  background-image: url('images/sf8.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: static;
+}
+*/
+.fit { /* set relative picture size */
+  max-width: 100%;
+  max-height: 100%;
+}
+.center {
+  display: block;
+  margin: auto;
+}
+
+</style>
+
+
+
+
+
+
+
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="locations" class="carousel slide" data-ride="carousel">
+        <!--
+        <ol class="carousel-indicators">
+          <li data-target="locations" data-slide-to="0" class="active"></li>
+          <li data-target="locations" data-slide-to="1"></li>
+          <li data-target="locations" data-slide-to="2"></li>
+          <li data-target="locations" data-slide-to="3"></li>
+        </ol>
+      -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img id="sfday" class=" fit center" src="images/sfday.png">
+              <div class="carousel-caption">
+                <div class="crocMessage">
+                  <h1>We craft beautiful, functional websites</h1>
+                  <h1>built with the power of <span id="mean">MEAN</span> Stack.</h1>
+                  <button id="startWebsite" class="btn btn-primary "><h1>START CREATING YOUR SITE</h1></button>
+              </div>
+              </div>
+          </div>
+          <div class="item">
+            <img id="sfday" class=" fit center" src="images/goldenDrop.png"/>
+            <div class="carousel-caption">
+              <div class="crocMessage">
+                <h1>We craft beautiful, functional websites</h1>
+                <h1>built with the power of <span id="mean">MEAN</span> Stack.</h1>
+                <button id="startWebsite" class="btn btn-primary "><h1>START CREATING YOUR SITE</h1></button>
+            </div>
+            </div>
+          </div>
+          <div class="item">
+            <img id="sfday" class=" fit center" src="images/goldenView.png"/>
+            <div class="carousel-caption">
+              <div class="crocMessage">
+                <h1>We craft beautiful, functional websites</h1>
+                <h1>built with the power of <span id="mean">MEAN</span> Stack.</h1>
+                <button id="startWebsite" class="btn btn-primary "><h1>START CREATING YOUR SITE</h1></button>
+            </div>
+            </div>
+          </div>
+          <div class="item">
+            <img id="sfday" class=" fit center" src="images/goldenSkyline.png"/>
+            <div class="carousel-caption">
+              <div class="crocMessage">
+                <h1>We craft beautiful, functional websites</h1>
+                <h1>built with the power of <span id="mean">MEAN</span> Stack.</h1>
+                <button id="startWebsite" class="btn btn-primary "><h1>START CREATING YOUR SITE</h1></button>
+            </div>
+            </div>
+          </div>
+          <!--
+          <a class="left carousel-control" href="#locations" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#locations" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      -->
+        </div>
+      </div><!-- end of locations -->
+    </div>
+  </div><!-- end of row -->
+</div><!-- end of container-fluid -->
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+<script>
+$('.carousel').carousel({
+  interval: 500,
+  wrap: true
+});
+
+</script>
