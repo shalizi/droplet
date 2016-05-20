@@ -184,20 +184,40 @@ line-height: 28px;
 
 
 <style>
-
+.colors{
+  color: #1f4888;
+  color: #2a62b9;
+}
 #test{
   color: white;
 }
-p{
+.formFont{
 
-   margin-top: 5px;
-   margin-bottom: 0px;
-   font-size: 14px;
+color: #0471ba !important;
+font-weight: 400 !important;
+line-height: 30px !important;
+margin-bottom: 5px !important;
+font-family: 'Montserrat', sans-serif;
+font-weight: bolder;
+font-stretch: extra-expanded;
+font-size: 15px;
 }
+.formFontBold{
+  color: #1f4888;!important;
+  font-weight: 600 !important;
+  line-height: 30px !important;
+  margin-bottom: 5px !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-stretch: extra-expanded;
+  font-size: 15px;
+
+}
+
 .textCenter{
   text-align: center;
 }
-#sellMyCar{
+#contactForm{
   border: 3px solid whitesmoke;
   padding: 30px;
   padding-left: 45px;
@@ -216,45 +236,17 @@ p{
   #scheduleFont{
     font-size: 16px;
   }
-  input{
-     height: 50px;
-   width: 253px;
-   padding-left: 5px;
 
-  }
   .centerBlock {
-  display: table;
+
   margin: 0 auto;
 }
-#firstname{
+
+.formatInputBox{
   height: 45px;
-  padding-left:17px;
-  width: 100%;
-}
-#lastname{
-  height: 45px;
-  padding-left:17px;
-  width: 100%;
-}
-#tel{
-  height: 45px;
-  padding-left:17px;
-  width: 100%;
-}
-#date{
-  height: 45px;
-  padding-left:17px;
-  width: 100%;
-}
-#time{
-  height: 45px;
-  padding-left:17px;
-  width: 100%;
-}
-#email{
-  height: 45px;
-  padding-left:17px;
-  width: 100%;
+padding-left: 17px;
+width: 100%;
+    border: 2px solid #D8DADC;
 }
 
 input.ng-invalid.ng-touched{
@@ -267,17 +259,8 @@ input.ng-valid.ng-touched{
   color: #DA3637;
 
 }
-#ppdiv{
 
-  padding: 15px;
 
-}
-#pp{
-font-size: 10;
-font-weight: 600;
-color: white;
-margin-right: 10px;
-}
 #message{
   color: purple;
   margin-left: 30px;
@@ -285,31 +268,44 @@ margin-right: 10px;
 #test{
   color: white;
 }
+#contactH4{
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-weight: normal !important;
+  line-height: 30px !important;
+}
 </style>
 
 
 
 <div class="row">
-<div  class="col-xs-12 col-sm-6">
+<div  class="col-xs-12">
 
 
 
 <!-- LEFT LEFT LEFT -->
-<div id="sellMyCar">
+<div id="contactForm">
 
-<form name="scheduleForm" novalidate class="centerBlock" ng-submit="feedback(user)">
+<form name="contactForm" novalidate class="centerBlock" ng-submit="feedback(user)">
 <br>
-          <fieldset>
+          <!--<fieldset> -->
 
              <br>
 
                 <div class="row">
                    <div class="col-xs-12 col-md-6">
-                      <p>First Name</p>
-                      <input id="firstname" type="text" name="firstname"
+                      <p class="formFont">Contact Name:*</p>
+                      <input id="firstname" type="text" class="formatInputBox" name="firstname"
                       ng-model="user.firstname" ng-required="true">
-                      <p class="error" ng-show="scheduleForm.firstname.$invalid && scheduleForm.firstname.$touched">We need your first name.</p>
+                      <p class="error" ng-show="scheduleForm.firstname.$invalid && scheduleForm.firstname.$touched">Enter first name.</p>
                    </div>
+                   <div class="col-xs-12 col-md-6">
+                      <p class="formFont">Your Role:*</p>
+                      <input id="role" type="text" class="formatInputBox" name="role"
+                      ng-model="user.role" ng-required="true">
+                      <p class="error" ng-show="scheduleForm.role.$invalid && scheduleForm.role.$touched">Your role within the orginizatoin.</p>
+                   </div>
+                   <!--
                    <div class="col-xs-12 col-md-6">
                    <p>Date</p>
                    <input id="date" type="date" name="date"
@@ -318,6 +314,7 @@ margin-right: 10px;
 
 
                 </div>
+              -->
                 </div>
 
 
@@ -325,27 +322,95 @@ margin-right: 10px;
 
 
                 <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                     <p class="formFont">Email:*</p>
+                     <input id="email" type="email" class="formatInputBox" name="email"
+                     ng-model="user.email" ng-required="true">
+                     <p class="error" ng-show="scheduleForm.email.$invalid && scheduleForm.email.$touched">Please provide a valid email</p>
+                  </div>
                    <div class="col-xs-12 col-md-6">
-                      <p>Telephone</p>
-                      <input id="tel" type="number" name="telephone"
+                      <p class="formFont">Phone:*</p>
+                      <input id="tel" type="number" class="formatInputBox" name="telephone"
                       ng-model="user.telephone" ng-required="true">
-                      <p class="error" ng-show="scheduleForm.telephone.$invalid && scheduleForm.telephone.$touched">You must enter a phone number.</p>
+                      <p class="error" ng-show="scheduleForm.telephone.$invalid && scheduleForm.telephone.$touched">Your phone number.</p>
+                   </div>
+
+                </div>
+
+
+
+
+                <!-- website and launch date -->
+                <div class="row">
+                   <div class="col-xs-12 col-md-6">
+                      <p class="formFont">Website URL:</p>
+                      <input id="website" type="text" class="formatInputBox" name="website"
+                      ng-model="user.website" ng-required="true">
+                      <p class="error" ng-show="scheduleForm.website.$invalid && scheduleForm.website.$touched">Current website URL</p>
                    </div>
                    <div class="col-xs-12 col-md-6">
-                      <p>Email</p>
-                      <input id="email" type="email" name="email"
-                      ng-model="user.email" ng-required="true">
-                      <p class="error" ng-show="scheduleForm.email.$invalid && scheduleForm.email.$touched">This must be a valid email</p>
+                      <p class="formFont">Ideal Launch Date:*</p>
+                      <input id="launch" type="date"  class="formatInputBox" name="launch"
+                      ng-model="user.launch" ng-required="true">
+                      <p class="error" ng-show="scheduleForm.launch.$invalid && scheduleForm.launch.$touched">Select a date</p>
                    </div>
+
                 </div>
-                <span id="ppdiv">
-                 <span id="pp" class="text-justify">
-                   I agree to the Terms of Use and the Privacy Policy. <span id="test"> I agree to the Terms of Use and the Privacy Policy. </span>
-                </span>
-               </span>
+
+                <!-- end of website and launch date -->
+                <!-- start work and size of budget -->
+                <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                     <p class="formFont">When Would You Like To Start Work?*</p>
+                     <select id="startWork" ng-model="data.startWork" class="formatInputBox">
+                       <option value="rushed" checked> Rushed: 2-4 weeks(Rushed fee may apply)</option>
+                       <option value="soon">Soon: 4-6 weeks</option>
+                       <option value="standard">Standard: 6-8 weeks</option>
+                       <option value="future">Future: 2+ months</option>
+                     </select>
+
+                  </div>
+
+                   <div class="col-xs-12 col-md-6">
+                      <p class="formFont">How Large Is Your Project Budget?*</p>
+                      <select id="budget" ng-model="data.budget" class="formatInputBox">
+                        <option value="4to8" checked>$4,000 - $8,000</option>
+                        <option value="8to15" checked>$8,000 - $15,000</option>
+                        <option value="15to25" checked>$15,000 - $25,000</option>
+                        <option value="25to50" checked>$25,000 - $50,000</option>
+                        <option value="50+" checked>$50,000+</option>
+                      </select>
+
+                   </div>
+                </div><!-- end of row -->
 
 
-          </fieldset>
+
+
+
+                <!-- end or start date and budget -->
+
+                <h4 id="contactH4" class="formFontBold">Do you have a detailed request for proposal document (RFP) prepared for this project?*</h4>
+
+                <!-- 3 options start -->
+                <div class="row">
+                  <div class="col-xs-4">
+                      <input type="radio" name="uploadRFPproject" value="male" checked> <span class="formFont">Yes, I’d like to upload it now</span>
+                  </div>
+                  <div class="col-xs-4">
+                      <input  type="radio" name="uploadRFPproject" value="female"> <span class="formFont">No, please guide me through the process</span>
+                  </div>
+                <div class="col-xs-4">
+                  <input type="radio" name="uploadRFPproject" value="other"> <span class="formFont">No, I'd like to fill out your form later</span>
+                </div>
+             </div>
+                <!-- 3 options end -->
+
+
+
+
+
+        <!--   </fieldset>-->
 
 
     <button class="btn btn-default btn-xlarge pull-right" ng-disabled="scheduleForm.$invalid"><strong><span id="scheduleFont">Send</span></strong></button>
@@ -353,7 +418,7 @@ margin-right: 10px;
 
 
 </form>
-</div><!-- end of sellMyCar -->
+</div><!-- end of contactForm -->
 </div>
 </div>
 
