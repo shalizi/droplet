@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Web Droplet</title>
+  <title>Web Droplets</title>
   <meta charset="utf-8">
+ <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel='stylesheet' >
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel='stylesheet' type='text/css'>
@@ -17,11 +20,25 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
  <link href="http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/custom.css">
+<style>
+.design {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  background-image: url(images/brick2.png);
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin: -15px;
 
+}
+  </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-default" data-spy="affix" data-offset-top="197">
+
+
+<nav class="navbar navbar-default" data-spy="affix" data-offset-top="197" style="border-bottom: 1px solid #CAD4DD;box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.09);">
   <div class="container-fluid">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -29,17 +46,26 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><span id="web">Web </span><span id="croc"> Droplet</span></a>
+      <a class="navbar-brand" href="#">
+
+        <span id="web"><span id="w">w</span>eb </span><span id="croc"><span id="d">d</span>roplets</a>
     </div>
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a href="#section1">HOME</a></li>
-          <li><a href="#section2">PORTFOLIO</a></li>
-          <li><a href="#section3">PRICING</a></li>
+          <li><a href="#section22">ABOUT</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WEB PACKAGES<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">DROPLET PACKAGE</a></li>
+              <li><a href="#section42">LIGHTNING PACKAGE</a></li>
+              <li><a href="#section41">STORM PACKAGE</a></li>
+
+
+            </ul>
+          </li>
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#section41">WEB DEVELOPMENT</a></li>
               <li><a href="#section42">APP DEVELOPMENT</a></li>
               <li><a href="#section41">CLOUD SERVICES</a></li>
               <li><a href="#section42">LOGO DESIGN</a></li>
@@ -47,9 +73,8 @@
 
             </ul>
           </li>
-          <li><a href="#section1">HOME</a></li>
-          <li><a href="#section2">ABOUT US</a></li>
-          <li><a href="#section3">PORTFOLIO</a></li>
+
+          <li><a href="#section41">CONTACT</a></li>
         </ul>
       </div>
     </div>
@@ -57,98 +82,386 @@
 </nav>
 
 
+<!-- start of carousel -->
+<div id="section1" class="container-fluid" style="padding: 0px;padding-top: 45px;">
+  <div class="row">
+    <div class="col-md-12">
+      <div id="locations" class="carousel slide" data-ride="carousel">
+        <!--
+        <ol class="carousel-indicators">
+          <li data-target="locations" data-slide-to="0" class="active"></li>
+          <li data-target="locations" data-slide-to="1"></li>
+          <li data-target="locations" data-slide-to="2"></li>
+          <li data-target="locations" data-slide-to="3"></li>
+        </ol>
+      -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img id="vinyard" class=" " src="images/vinyards.jpg" style="width: 100%;">
+              <div class="carousel-caption">
+                <div class="crocMessage">
+                  <h1>We craft beautiful, functional websites</h1>
+                  <h1>built with the power of <span id="mean">MEAN</span> Stack.</h1>
+                  <button i class="btn btnMod btn-primary startWebsite "><h1 style="margin-top: 10px;">START CREATING YOUR SITE</h1></button>
+              </div>
+              </div>
+          </div>
+          <div class="item">
+            <img id="test" src="images/vinyards.jpg"/>
+            <div class="carousel-caption">
+              <div class="crocMessage">
+                <h1>We craft beautiful, functional websites</h1>
+                <h1>built with the power of <span id="mean">Javascript</span></h1>
+                <button  class="btn btnMod btn-primary startWebsite"><h1 style="margin-top: 10px;">START CREATING YOUR SITE</h1></button>
+            </div>
+            </div>
+          </div>
+          <div class="item">
+            <img id="test2" src="images/vinyards.jpg"/>
+            <div class="carousel-caption">
+              <div class="crocMessage">
+                <h1>We craft beautiful, functional websites</h1>
+                <h1>built with the power of <span id="mean">MEAN</span> Stack.</h1>
+                <button  class="btn btnMod btn-primary startWebsite "><h1 style="margin-top: 10px;">START CREATING YOUR SITE</h1></button>
+            </div>
+            </div>
+          </div>
+          <div class="item">
+            <img id="test3" src="images/vinyards.jpg"/>
+            <div class="carousel-caption">
+              <div class="crocMessage">
+                <h1>We craft beautiful, functional websites</h1>
+                <h1>built with the power of <span id="mean">MEAN</span> Stack.</h1>
+                <button  class="btn btnMod btn-primary startWebsite"><h1 style="margin-top: 10px;">START CREATING YOUR SITE</h1></button>
+            </div>
+            </div>
+          </div>
+          <!--
+          <a class="left carousel-control" href="#locations" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#locations" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      -->
+        </div>
+      </div><!-- end of locations -->
+    </div>
+  </div><!-- end of row -->
+</div><!-- end of container-fluid -->
+<!-- end of carousel -->
 
-<div id="section1" class="container-fluid">
-    <div class="crocMessage">
-      <h1>We craft beautiful, functional websites</h1>
-      <h1>built with the power of <span id="mean">MEAN</span> Stack.</h1>
-      <button id="startWebsite" class="btn btn-primary "><h1>START CREATING YOUR SITE</h1></button>
+
+<!-- beginning of top section -->
+
+<div class="container-fluid" >
+  <div class="row">
+<div id="topbox" class="col-xs-12" style="padding: 15px;">
+  <h1 class="h1" style="text-align:center;color:#0471ba;">A JAVASCRIPT WEB DESIGN COMPANY</h1>
+  <p style="text-align:left; font-size: 21px; line-height: 28px;font-family: Montserrat;color: black;margin: 15px 55px 0px;">
+  Web Droplets provides custom websites for small business, brands, and professionals utilizing the latest, cutting-edge SPA technology built on AngularJS.
+  We are experts in JavaScript software stack committed to designing responsive websites that engage your customers, stimulate traffic, and cultivate your brand.
+We build value and help our Bay Area-based clients to achieve each their unique business goals by connecting sustainable technology, clean design, and exceptional service.
+
+  </p>
+
+</div><!-- end of topbox -->
+</div><!-- end of row -->
+
+<div class="row">
+<div class="col-md-4" style="text-align: center; width: 100%; margin-bottom: 15px; width:100%;">
+<div class="btn-group  btn-group-xl" role="group" aria-label="...">
+<button type="button" id="b1" class="btn btnMod btn-default" style="background-color: #00b4f1;color:white; padding: 20px 27px 20px 30px;font-size: 16px;letter-spacing: 3px;font-family: Montserrat; margin: 10px 0px;">WHO WE ARE</button>
+<button type="button" id="b2" class="btn btnMod btn-default" style="background-color: #6a6ff1;color:white; padding: 20px 27px 20px 30px;font-size: 16px;letter-spacing: 3px;font-family: Montserrat;margin: 10px 0px;">WEB PACKAGES</button>
+<button type="button" id="b3" class="btn btnMod btn-default" style="background-color: #6036a3;color:white; padding: 20px 27px 20px 30px;font-size: 16px;letter-spacing: 3px;font-family: Montserrat;margin: 10px 0px;">GET A QUOTE</button>
+</div>
+</div>
+
+</div><!-- end of row -->
+
+<!--
+<div class="row" style="margin: 15px;margin-top: 5px;">
+
+<div id="box1" class="col-xs-6 col-sm-4 col-md-3  boxlogo">
+</div>
+<div id="box2" class="col-xs-6  col-sm-4 col-md-3  boxlogo">
+</div>
+<div id="box3" class="col-xs-6  col-sm-4 col-md-3  boxlogo">
+</div>
+<div id="box4" class="col-xs-6  col-sm-4 col-md-3  boxlogo">
+</div>
+<div  id="box5" class="col-xs-6  col-sm-4 col-md-3 boxlogo">
+</div>
+<div id="box6" class="col-xs-6  col-sm-4 col-md-3  boxlogo">
+</div>
+<div id="box7" class="col-xs-6 col-sm-4 col-md-3 boxlogo">
+</div>
+<div id="box8" class="col-xs-6  col-sm-4 col-md-3  boxlogo">
+</div>
+
+</div> -->
+
+<div class="design" style="background-color: rgba(255,255,255,0.7);">
+
+</div>
+
+
+
+
+<div id="section3" class="container-fluid" style="padding-left: 0px; padding-right: 0px;margin: -15px;border-top: 5px solid #ebebeb;">
+  <div class="row">
+    <h2 style="color: #2A62B9; font-size: 32px; line-height:42px; font-family: Montserrat; text-align: center;margin:0px;padding-bottom: 35px;background-color:white;">CUSTOMIZED SERVICES AND SOLUTIONS</h2>
   </div>
-<img id="codepic" src="/images/pic1.png" alt="image of code block">
-</div>
-<div id="section2" class="container-fluid">
-  <h1>Section 2</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
-<div id="section3" class="container-fluid">
   <div id="custom">
     <div class="row">
-    <div class="box col-sm-3">
-      <i class="fa fa-arrows" aria-hidden="true"></i>
-      <p class="boxinfo">Is your website compatible with iOS and Android devices? Does it display correctly on all screen sizes? We can develop a responsive website that looks great to every customer you engage with wherever they go.
+    <div class="box col-sm-3" style="background-color: #00b4f1;">
+      <i class="fa fa-arrows faIcon" aria-hidden="true"></i>
+      <p class="boxinfo" style="font-family: Montserrat;font-size: 15px;line-height: 24px;padding: 10px;padding-left:15px;">Is your website compatible with iOS and Android devices? Does it display correctly on all screen sizes? We can develop a responsive website that looks great to every customer you engage with wherever they go.
       </p>
-      <button class="btn btn-info">Learn More</button>
+      <button class=" btnMod2">LEARN MORE</button>
     </div>
 
-    <div class="box col-sm-3">
-    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-      <p class="boxinfo">
+    <div class="box col-sm-3" style="background-color: #6a6ff1;">
+    <i class="fa fa-shopping-cart faIcon" aria-hidden="true"></i>
+      <p class="boxinfo" style="font-family: Montserrat;font-size: 15px;line-height: 24px;padding: 10px;">
         Sell your products online with Big-Commerce, an industry-leading online storefront. We can create your store with secure order processing, subscription management, membership sales, and much more.
 
       </p>
-      <button class="btn btn-info">Learn More</button>
+      <button class="btnMod2">LEARN MORE</button>
     </div>
 
-    <div class="box col-sm-3">
-    <i class="fa fa-cogs" aria-hidden="true"></i>
-      <p class="boxinfo">Web Droplet can help create a new logo or work to improve your existing branding. Our custom logos and print collateral can help grow your audience, foster new relationships, and promote brand awareness.
+    <div class="box col-sm-3" style="background-color: #2A62B9;">
+    <i class="fa fa-paint-brush faIcon" aria-hidden="true"></i>
+      <p class="boxinfo" style="font-family: Montserrat;font-size: 15px;line-height: 24px;padding: 10px;">Web Droplets can help create a new logo or work to improve your existing branding. Our custom logos and print collateral can help grow your audience, foster new relationships, and promote brand awareness.
       </p>
-      <button class="btn btn-info">Learn More</button>
+      <button class="btnMod2 ">LEARN MORE</button>
     </div>
 
-    <div class="box col-sm-3">
-      <i class="fa fa-line-chart"  aria-hidden="true"></i>
-      <p class="boxinfo">
-        Strong visual components are essential website features. Our full photography options include portraits, landscapes, product shots, and stock imagery. Web Droplet assists with post-processing needs, as well.
+    <div class="box col-sm-3" style="background-color: #6036a3;">
+      <i class="fa fa-line-chart faIcon"  aria-hidden="true"></i>
+      <p class="boxinfo" style="font-family: Montserrat;font-size: 15px;line-height: 24px;padding: 10px;">
+        Our team combines Search Engine Optimization and social media maketing techniques with insight gathering and data analytics to stake out strategies that grow brands in unique, powerful, and sustainable ways.
       </p>
-      <button class="btn btn-info">Learn More</button>
+      <button class="btnMod2 ">LEARN MORE</button>
     </div>
   </div><!-- end of row -->
 
+
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+<div class="row" style="border-top: 5px solid #ebebeb;
+    border-bottom: 5px solid #ebebeb;">
+<div id="topbox2" class="col-xs-12 main-content contactAttachTop  mask" style="padding: 15px;">
+        <h1 class="formatH1" style="text-align:center;color: white;letter-spacing: 2px; margin-top: 100px;">CONTACT WEB DROPLETS</h1>
+          <h2 style="text-align:center;color: white;letter-spacing: 2px;font-size: 24px; margin-bottom: 100px;">GET A FAST QUOTE ON YOUR WEB DESIGN PROJECT.</h2>
+</div><!-- end of topbox2 -->
+</div><!-- end of row -->
+
+
+
+
+
+</div><!-- end of container -->
+
+
+<!-- end of top section -->
+
+
+
+
+
+
+<style>
+.priceicon{
+  font-size: 31px;
+  border: 1px solid black;
+  padding: 7px 15px;
+  border-radius: 1800Px;
+}
+.droplet{
+  color: #0471ba;
+  border: 1px solid gray;
+
+}
+.light{
+  color: yellow;
+
+  background-color: #0471ba;
+
+  border: 1px solid black;
+}
+.storm{
+  padding: 8px 8px;
+  color: whitesmoke;
+  background-color: black;
+  border: 1px solid black;
+
+}
+.accordTitle{
+  padding-left: 15px;
+}
+.accordTitle:hover{
+  color: #0471ba;
+  text-decoration: none;
+}
+.panel-default>.panel-heading{
+  background-color: white;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+  <div class="row" style="padding: 15px;width: auto;margin:30px;">
+  <div class="col-xs-12 col-sm-6">
+      <h4 style="letter-spacing: 3px;margin-bottom: 30px;margin-top: 30px;">CONNECT WITH YOUR CUSTOMERS EVERYWHERE.</h4>
+      <h5 style="letter-spacing: 3px;margin-bottom: 40px;">Web Droplets provide custom responsive solution for everyone with flexible pricing options -lightning fast.
+      </h5>
+    <img src="images/response.png" style="margin-top: 20px;width: 100%;">
+
+  </div>
+
+<!-- start of collapse -->
+
+
+  <div class="col-xs-12 col-md-6">
+<div class="panel-group" id="packages" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a class="accordTitle" role="button" data-toggle="collapse" data-parent="#packages" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"  style="text-decoration: none;">
+          <i class="fa fa-tint priceicon droplet" aria-hidden="true"></i>
+            <span style="letter-spacing: 3px; font-weight: 300; margin-left: 15px;font-size: 120%;"> DROPLET PACKAGE</span>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed accordTitle" role="button" data-toggle="collapse" data-parent="#packages" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-decoration: none;">
+            <i class="fa fa-bolt priceicon light" aria-hidden="true"></i>
+          <span style="letter-spacing: 3px; font-weight: 300; margin-left: 15px;font-size: 120%;">LIGHTNING PACKAGE</span>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed accordTitle" role="button" data-toggle="collapse" data-parent="#packages" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-decoration: none;">
+          <i class="glyphicon glyphicon-flash priceicon storm" aria-hidden="true"></i>
+          <span style="letter-spacing: 3px; font-weight: 300; margin-left: 15px;font-size: 120%;">STORM PACKAGE</span>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </div><!-- end of row -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 <div id="section41" class="container-fluid">
   <h1>Section 4 Submenu 1</h1>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
 <div id="section42" class="container-fluid ">
+-->
 
 
 
 
 
 
-  <!-- Back To Top -->
-<a id="back-to-top" href="#">
-    <i class="back-top-icon"></i>
-</a>
-<!-- End Back to Top -->
   <!-- Footer -->
-<footer>
 
 
-<div class="footer-copyright">
+    <!-- Back To Top -->
+  <a id="back-to-top" href="#">
+      <i class="back-top-icon"></i>
+  </a>
+  <!-- End Back to Top -->
+    <!-- Footer -->
 
-  <div class="socialmedia copyright">
+  <footer>
 
+
+  <div class="footer-copyright">
+
+    <div class="socialmedia copyright">
+
+    </div>
+
+
+
+  <p class="copyright">
+
+
+
+  <p class="copyright">© 2016 WEB DROPLETS
+  <span class="copyright-bullet">
+  • </span><a href="/sitemap" title="Sitemap">SITEMAP</a>
+  • <a href="/contact" title="Contact">Contact</a><br>
+  <a href="tel:925-487-2238" target="_blank">925-487-2238</a> • 5501 DeMarcus Blvd <span class="copyright-comma">,</span> Dublin, CA 94568<br>
+  <span class="powered-by">Powered by <a href="http://www.wordpress.org" title="MEAN Stack" target="_blank">MEANSTACK</a></span></p>
+  </p>
   </div>
 
+  <!-- End Footer -->
 
-
-<p class="copyright">
-
-
-
-<p class="copyright">© 2016 WEB DROPLET
-<span class="copyright-bullet">
-• </span><a href="/sitemap" title="Sitemap">SITEMAP</a>
-• <a href="/contact" title="Contact">Contact</a><br>
-<a href="tel:925-487-2238" target="_blank">925-487-2238</a> • 5501 DeMarcus Blvd Ste 233 <span class="copyright-comma">,</span> Dublin, CA 94568<br>
-<span class="powered-by">Powered by <a href="http://www.wordpress.org" title="MEAN Stack" target="_blank">MEANSTACK</a></span></p>
-</p>
-</div>
+  <div id="orange">
+    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+  </div>
+  </footer>
 
 <!-- End Footer -->
 
